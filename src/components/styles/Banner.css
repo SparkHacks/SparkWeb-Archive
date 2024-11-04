@@ -1,0 +1,35 @@
+.banner {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 328px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-center {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: center;
+}
+.banner-center:hover .banner-description {
+  display: block;
+}
+
+.banner-img {
+  width: 230px;
+  height: 230px;
+}
+.banner-name {
+  font-size: 48px;
+  font-weight: 400;
+}
+.banner-date {
+  font-size: 32px;
+  font-weight: 400;
+}
+.banner-description {
+  display: none;
+}
