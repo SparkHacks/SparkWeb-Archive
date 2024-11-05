@@ -1,0 +1,66 @@
+---
+
+---
+
+<a class="website-card" href="#">
+    <img src="../src/assets/2023logo.png"/>
+    <div id="hidden-text">
+        <div class="SparkHacks-name">SparkHacks 2023</div>
+        <div class="SparkHacks-date">February 7 - February 8</div>
+    </div>
+    
+</a>
+
+<script>
+    const websiteComponent = document.querySelectorAll('website-card');
+    // websiteComponent.addEventListener()
+</script>
+
+<style>
+    .website-card{
+        background-color: #BC202080; 
+        height: 328px;
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    img{
+        height: 305px;
+        width: 305px;
+        transition: transform 0.5s ease;
+        transform: translateX(0);
+    }
+
+    #hidden-text {
+        display: none;
+        color: black;
+        font-size: 48px;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+
+        /* Starting state for animation */
+        animation: fadeIn 3s;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+  100% { opacity: 1; }
+    }
+
+
+    .website-card:hover #hidden-text {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .website-card:hover img {
+        transform: translateX(-50px);
+    }
+
+
+</style>
